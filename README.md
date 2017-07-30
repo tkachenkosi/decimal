@@ -124,3 +124,74 @@ than performance.
 The MIT License (MIT)
 
 This is a heavily modified fork of [fpd.Decimal](https://github.com/oguzbilgic/fpd), which was also released under the MIT License.
+
+
+СПИСОК КОМАНД
+
+создание переменной
+New()               из int64
+NewFromFloat()
+NewFromString()
+NewFromFloatExponent()
+
+команды
+Abs()           абсолютное значение
+Add()           сложение
+Sub()           вычитание
+Div()           деление
+DivRound()      деление с округлением
+Mod()           деление по модулю
+QuoRem()        возвращает деление и остаткок
+Mul()           умножение
+Neg()           отрицательное заначение
+Pow()           возведение в степень
+
+Cmp()           сравнение с другой переменной
+возвращает
+(d < d2) = -1 
+(d == d2) = 0
+(d > d2) = 1
+
+Sign()          сравнение с нулем
+возвращает
+(d < 0)  = -1
+(d == 0)  = 0
+(d > 0)   = 1
+
+Equal()         проверяет на равенство
+GreaterThen()   проверяет что больше
+LessThen()      проверяет что меньше
+
+
+Exponent()      возвращает эспоненту
+Coefficient()
+IntPart()       возвращает целое представление
+Float64()
+String()        преоброзует в строку
+StringFixed()   возврощает с окркуглением до указанной точностью
+StringScaled()
+Round()         простейшее округление
+Floor()         ближайшие целое в меньшею сторону
+Cell()         ближайшие целое в большию сторону
+Truncate()      обрезание до заданной точности
+
+работа с данными типа []byte
+UnmarshalJSON()
+MarshalJSON()
+
+работа с другими типами
+UnmarshalBinary()
+MarshalBinary()
+UnmarshalText()
+MarshalText()
+GobEncode()
+GobDecode()
+
+Scan()      преобразование из неизвесного источника (интерфейса)
+Value()     строковое представление
+
+
+Утилиты
+Min()
+Max()
+
